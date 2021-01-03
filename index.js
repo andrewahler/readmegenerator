@@ -42,5 +42,18 @@ const questions = [
     name: "Github",
     text: "enter github username",
   },
+  {
+    type: "list",
+    name: "license",
+    message: "Choose a License",
+    choices: ["MIT", "Apache", "Affero", "GPL"],
+  },
 ];
-console.log(questions)
+
+startPrompts()
+
+function startPrompts(){
+  inquirer.prompt(questions).then(function(response){
+    console.log(response)
+  })
+}
