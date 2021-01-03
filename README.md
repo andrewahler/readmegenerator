@@ -1,10 +1,11 @@
 
-# Project: 1
-## Description: 1
+# Project: ReadME Generator
+## Description: Using Node JS, create a quick and easy readme for your projects
 ### Table of Contents: 
 * (Usage)[#usage]
 * (Contributing)[#contributors]
 * (License)[#license]
+* (instillation)[#instillation]
 * (Tests)[#test}]
 * (Github)[#github]
 * (Email)[#email]
@@ -12,23 +13,26 @@
 
 ## Usage: 
 
-1
+Use via Terminal
 
 
 ## Contributors:
 
-1
+N/a
 
 ## License:
 
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
+## Instillation
+
+
 ## Test:
 
-1
+n/a
 
 ## GitHub: 
-https://github.com/1
+https://github.com/andrewahler
 
 ## Email:
-If you have any questions please reach out to me at 1
+If you have any questions please reach out to me at andrewahler@gmail.com
