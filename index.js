@@ -1,5 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
+const { throwError } = require("rxjs");
 
 const questions = [
   {
@@ -90,7 +91,11 @@ https://github.com/${response.Github}
 ## Email:
 If you have any questions please reach out to me at ${response.Email}
 `
-
+fs.writeFileSync("./README.md", filecreate, function(error){
+if(error) throw error
 console.log(filecreate)
+})
+
+
   })
 }
