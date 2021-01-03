@@ -29,11 +29,6 @@ const questions = [
   },
   {
     type: "input",
-    name: "License",
-    text: "Enter license information",
-  },
-  {
-    type: "input",
     name: "Tests",
     text: "Enter Tests",
   },
@@ -48,6 +43,11 @@ const questions = [
     message: "Choose a License",
     choices: ["MIT", "Apache", "Affero", "GPL"],
   },
+  {
+    type: "input",
+    name: "Email",
+    text: "enter email address",
+  }
 ];
 
 startPrompts()
@@ -55,5 +55,42 @@ startPrompts()
 function startPrompts(){
   inquirer.prompt(questions).then(function(response){
     console.log(response)
+var filecreate = `
+# Project: ${response.title}
+## Description: ${response.description}
+### Table of Contents: 
+* (Usage)[#usage]
+* (Contributing)[#contributors]
+* (License)[#license]
+* (Tests)[#test}]
+* (Github)[#github]
+* (Email)[#email]
+
+
+## Usage: 
+
+${response.Usage}
+
+
+## Contributors:
+
+${response.Contributing}
+
+## License:
+
+![GitHub license](https://img.shields.io/badge/license-${response.license}-blue.svg)
+
+## Test:
+
+${response.Tests}
+
+## GitHub: 
+https://github.com/${response.Github}
+
+## Email:
+If you have any questions please reach out to me at ${response.Email}
+`
+
+console.log(filecreate)
   })
 }
